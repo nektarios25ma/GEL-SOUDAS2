@@ -1,10 +1,6 @@
-/*************************************** 
-Waveshare AlphaBot Car Infrared Remote control
-
-CN: www.waveshare.net/wiki/AlphaBot
-EN: www.waveshare.com/wiki/AlphaBot
-****************************************/
+//NEKTARIOS KOURALKIS
 #include "AlphaBot.h"
+//ΔΕΚΤΗΣ ΚΑΙ ΠΟΜΠΟΣ ΥΠΕΡΗΧΗΤΙΚΟΥ ΑΙΣΘΗΤΗΡΑ,ECHO AND TRIGGER ULTRASONIC SENSOR
 int ECHO = 11;
 int TRIG = 12;
 
@@ -35,7 +31,8 @@ void Distance_test()                      // Measure the distance
  // Serial.print("Fdistance:");            //output distance (Unit: cm)
   //Serial.println(Fdistance);       
   Distanceultra = Fdistanceultra;
-}  
+} 
+//ΚΛΕΙΔΙΑ ΤΟΥ ΤΗΛΕΧΕΙΡΙΣΤΗΡΙΟΥ-ΟΡΙΣΜΟΣ,ΔΙΕΥΘΥΝΣΗ ΤΟΥΣ,KEY REMOTE IR CONTROL-ADRESS
 #define KEY2 0x18                 //Key:2 
 #define KEY8 0x52                 //Key:8 
 #define KEY4 0x08                 //Key:4 
@@ -106,7 +103,7 @@ void ISR_count2()
   counter2++;  // increment Motor 2 counter value
 }
  
-// TimerOne ISR
+// TimerOne ISR,ALL THIS FOR MEASURE SPEED OF TWO SIDES-TWO WHEELS
 void ISR_timerone()
 {
   Timer1.detachInterrupt();  // Stop the timer
@@ -140,13 +137,14 @@ void setup()
   
   Serial.begin(9600);
   UltrasonicConfig();
+  //FOR MEASURE SPEED
   Timer1.initialize(1000000); // set timer for 1sec
   attachInterrupt(digitalPinToInterrupt (MOTOR1), ISR_count1, RISING);  // Increase counter 1 when speed sensor pin goes High
   attachInterrupt(digitalPinToInterrupt (MOTOR2), ISR_count2, RISING);  // Increase counter 2 when speed sensor pin goes High
   Timer1.attachInterrupt( ISR_timerone ); // Enable the timer
   pinMode(IR, INPUT);
   ArduinoCar.SetSpeed(150);
-  
+  //THIS FOR LINE FOLLOWING
   pinMode(ENA, OUTPUT);
   pinMode(ENB, OUTPUT);
   pinMode(IN1, OUTPUT);
@@ -159,7 +157,6 @@ void setup()
   digitalWrite(IN4, LOW);
   analogWrite(ENA,0);
   analogWrite(ENB,0);
-  
   for (int i = 0; i < 400; i++)                  // make the calibration take about 10 seconds
   {
     trs.calibrate();                             // reads all sensors 10 times
@@ -186,7 +183,7 @@ void setup()
 }
 
 void(*resetFunc)(void)=0;
-
+//THE MAIN BONE OF THIS PROGRAM IS IR REMOTE CONTROL WITH ADDITIONAL FUNCTIONALITIES
 void loop()
 {
   if (IR_decode(&results))
@@ -214,15 +211,17 @@ void translateIR() // takes action based on IR code received
     case KEY2:
       ArduinoCar.Forward();
       break;
-
+      
+//THIS CASE IS FOR centripetal acceleration ,THE OPEN CIRCLE WILL SHOW IN Y-AXIS THE centripetal acceleration
     case KEY3:
       ArduinoCar.MotorRun(137,200);
       break;
-
+      
     case KEY4:
       ArduinoCar.Left();
       break;
-
+      
+//OBSTACLE AVOID CASE
     case KEY5:
       start_time=millis();
 while (millis() - start_time < 100000) {
@@ -258,7 +257,8 @@ while (millis() - start_time < 100000) {
     case KEY6:
       ArduinoCar.Right();
       break;
-
+      
+//VISUAL TRACK WITH ESCAPE* FUNCTION
     case KEY7:
     {Distance_test();
     //Measure the distance ahead 
@@ -281,9 +281,9 @@ while (millis() - start_time < 100000) {
       }
       }
       Distance_test();
-      if (Distanceultra <= 35)
+      if (Distanceultra <= 35)  //*
       {
-      resetFunc();
+      resetFunc(); 
       delay(1000);
       }
       resetFunc();
