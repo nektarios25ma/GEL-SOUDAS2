@@ -1,10 +1,34 @@
+INTELLIGENT ROBOT CAR THAT TRANSFERS SPEED AND ACCELERATION DATA WIRELESS "LIVE" WITH A GRAPHIC PRESENTATION - LABORATORY TOOL. Seeing our poor experimental background in motion science as a physicist, I wanted to take advantage of free software in conjunction with the arduino, making a build with countless extensions. The original concept is a standalone car that transmits wireless rotation per minute (RPM) and speed (trying acceleration also) to graphics on our PC. Autonomous means that it either avoids obstacles or follows a single line or follows a virtual path BUT TRANSMIT DATA TO PC.
+Hardware: 
+1)	https://www.waveshare.com/product/robotics/alphabot/alphabot-robot.htm (or https://www.waveshare.com/alphabot-ar-basic.htm?___SID=U )
+2)	https://www.aliexpress.com/w/wholesale-hc05-bluetooth.html
+3)	https://www.indiamart.com/proddetail/ultrasonic-sensor-hc-sr04-module-for-arduino-18101779448.html
+4)	2 batteries: https://grobotronics.com/ncr18650b-3350mah-panasonic.html
+5)	https://www.waveshare.com/uno-plus.htm
+6)	Your pc.
+
+                                                            
+Software:
+1)	arduino ide  
+2)	processing ide (free download-open software  from: https://processing.org/  ) 
+
+
+ 
+
+                                                                                                                                                                                                
+
+
+
+
+
+
+
+
+Greek:
 # ΓΕΝΙΚΟ ΛΥΚΕΙΟ ΣΟΥΔΑΣ,ΟΜΑΔΑ2-OPEN ROBOTICS(GEL-SOUDAS2)
 ΕΞΥΠΝΟ ΑΥΤΟΚΙΝΗΤΑΚΙ ΠΟΥ ΜΕΤΑΔΙΔΕΙ ΔΕΔΟΜΕΝΑ ΤΑΧΥΤΗΤΑΣ ΑΣΥΡΜΑΤΑ <<ζωντανά>> ΜΕ ΚΑΤΑΣΚΕΥΗ ΓΡΑΦΙΚΗΣ ΠΑΡΑΣΤΑΣΗΣ -ΕΡΓΑΣΤΗΡΙΑΚΟ ΕΡΓΑΛΕΙΟ ΦΥΣΙΚΗΣ.
 Βλέποντας το φτωχό πειραματικό μας υπόβαθρο στον τομέα των κινήσεων ως καθηγητής Φυσικός και ταυτόχρονα τις προτάσεις -ακριβές σε κόστος και φτωχές σε επεκτασιμότητα- όπως της LEGO ,θέλησα να εκμεταλευτώ το ελευθερο λογισμικό σε συνδυασμό με το arduino ,προτείνοντας στους μαθητές μου να κάνουν μια κατασκευή με αμέτρητες δυνατότητες επέκτασης.
 Η αρχική ιδέα είναι ένα αυτόνομο αυτοκινητάκι που μεταδίδει ασύρματα στροφές ανά λεπτό τροχού(RPM) και ταχύτητα κάνοντας γραφική παράσταση στο PC μας .
 Αυτόνομο σημαίνει είτε ότι αποφεύγει εμπόδια είτε ότο ακολουθεί από μόνο του μία γραμμή ΑΛΛΑ ΤΑΥΤΟΧΡΟΝΑ ΜΕΤΑΔΊΔΕΙ ΔΕΔΟΜΕΝΑ.
-ΥΛΙΚΑ : (hardware)
-α) κιτ αυτοκινητάκι(VKmaker New Avoidance tracking Motor Smart Robot Car Chassis Kit Speed Encoder Battery Box 2WD Ultrasonic module with tutorial CD, https://www.amazon.com/VKmaker-Avoidance-tracking-Ultrasonic-tutorial/dp/B01CXVA6IO/ref=pd_sbs_21_7?_encoding=UTF8&pd_rd_i=B01CXVA6IO&pd_rd_r=f21e39f9-f2f0-11e8-b188-2fb63616cf11&pd_rd_w=TZKzn&pd_rd_wg=Yh9DF&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=7d5d9c3c-5e01-44ac-97fd-261afd40b865&pf_rd_r=0RGM040H1BGCZDFAW5J0&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=0RGM040H1BGCZDFAW5J0 ) β) IR Infrared Optical Speed Measuring Sensor - Optocoupler Module For Motors , link: https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/sensors/distance/ir-infrared-optical-speed-measuring-sensor-optocoupler-module-for-motors/
-γ)433Mhz RF Transmitter & Reciever Kit for Arduino: https://www.cableworks.gr/ilektronika/arduino-and-microcontrollers/wireless-communications/433mhz-rf-transmitter-and-reciever-kit-for-arduino/
-δ)2 arduino uno
+
 ΤΕΛΙΚΑ ΑΥΤΑ ΠΟΥ ΧΡΗΣΙΜΟΠΟΗΘΗΚΑΝ ΚΑΙ ΤΟ ΌΛΟ PROJECT ΔΙΑΒΑΣΤΕ ΤΟ ΣΤΟ ΚΕΙΜΕΝΟ ΠΟΥ ΑΝΕΒΑΣΑ!!!
