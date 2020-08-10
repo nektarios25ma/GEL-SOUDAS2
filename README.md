@@ -1,6 +1,7 @@
 INTELLIGENT ROBOT CAR THAT TRANSFERS SPEED AND ACCELERATION DATA WIRELESS "LIVE" WITH A GRAPHIC PRESENTATION - LABORATORY TOOL. Seeing our poor experimental background in motion science as a physicist, I wanted to take advantage of free software in conjunction with the arduino, making a build with countless extensions. The original concept is a standalone car that transmits wireless rotation per minute (RPM) and speed (trying acceleration also) to graphics on our PC. Autonomous means that it either avoids obstacles or follows a single line or follows a virtual path BUT TRANSMIT DATA TO PC.
 Hardware: 
-1)	https://www.waveshare.com/product/robotics/alphabot/alphabot-robot.htm (or https://www.waveshare.com/alphabot-ar-basic.htm?___SID=U )
+1)https://www.hellasdigital.gr/go-create/robotics/car-robot/3wd-robot-car-kit/ (or	
+https://www.waveshare.com/product/robotics/alphabot/alphabot-robot.htm (or https://www.waveshare.com/alphabot-ar-basic.htm?___SID=U ))
 2)	https://www.aliexpress.com/w/wholesale-hc05-bluetooth.html
 3)	https://www.indiamart.com/proddetail/ultrasonic-sensor-hc-sr04-module-for-arduino-18101779448.html
 4)	2 batteries: https://grobotronics.com/ncr18650b-3350mah-panasonic.html
