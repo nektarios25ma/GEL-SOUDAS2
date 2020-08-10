@@ -8,7 +8,7 @@ https://www.waveshare.com/product/robotics/alphabot/alphabot-robot.htm (or https
 5)	https://www.waveshare.com/uno-plus.htm
 6)	Your pc.
 
-                                                            
+ how: https://www.youtube.com/watch?v=p8PouSmxOQY                                                           
 Software:
 1)	arduino ide  
 2)	processing ide (free download-open software  from: https://processing.org/  ) 
