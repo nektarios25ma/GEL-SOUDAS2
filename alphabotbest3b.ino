@@ -285,7 +285,7 @@ while (millis() - start_time < 100000) {
     {
       Distance_test();
     start_time=millis();
-     while ((millis() - start_time < 20000) && (Distanceultra > 35)) { // Εφόσον δεν πέρασαν 20 δευτ κάνε:
+     while ((millis() - start_time < 20000UL) && (Distanceultra > 35)) { // Εφόσον δεν πέρασαν 20 δευτ κάνε:
      Distance_test();   
      for (int i=40; i <= 170; i++){
      ArduinoCar.MotorRun(i+deltaright,i+deltaleft);  
